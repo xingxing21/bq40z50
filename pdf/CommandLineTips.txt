@@ -1,0 +1,16 @@
+
+General help: 
+
+Run the command line executable without arguments to get usage help.
+
+-------------
+
+Tips:
+
+Check the return status of the program. Return code of 0 is success. Any other return code indicates that programming failed.
+
+The program may output error messages before the serial number of the transceiver is displayed. Ignore all errors upto the Serial number if the serial number is printed.
+
+Rely on the return code from the program. The printed warnings/errors are intended to help debug and fix the issue that caused the failure. Ignore printed errors if the program returns 0 (success) unless special conditions are to be handled.
+
+-------------

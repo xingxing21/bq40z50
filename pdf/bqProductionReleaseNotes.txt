@@ -1,0 +1,149 @@
+General notes
+------------------------------------------
+1. Limitations: Recommended display resolution 1920x1080 with maximum 125% scaling. The GUI may not show password fields and buttons may be moved out of the visible area of screen when display scaling is used.
+
+2. Limitations: Disconnect all EV2400 and *unused* EV2300 / MKST-3P-ALT-EV2300 / MKS-SAI-001 from the PC. All connected EV2300 / MKST-3P-ALT-EV2300 / MKS-SAI-001 will need to be used by the tool.
+
+
+bqProduction SBB v1.0.16
+-------------------------------
+11/15/2022
+
+Added support for MKST-3P-ALT-EV2300 / MKS-SAI-001
+EV2300 may not be supported. Use previous versions for EV2300 support.
+
+bqProduction SBB v1.0.15
+-------------------------------
+11/13/2017
+
+Add support for bq27z561 with I2C communications
+
+Add application lock so only one instance of bqProduction can be 
+running on computer. 
+
+
+bqProduction SBB v1.0.14
+-------------------------------
+07/06/2017
+
+Reduce memory leak causing Java out of memory failure after 200 runs depending on system memory.
+It is recommended that bqProduction is closed and reopened on a 4GB RAM system after 1000 runs to free memory.
+
+
+bqProduction SBB v1.0.13
+-------------------------------
+02/03/2017
+
+Added SHA1 key programming support for the bq40z50-R2 (bq9000)
+
+
+bqProduction SBB v1.0.12
+-------------------------------
+01/26/2017
+
+Added SHA1 key programming support for the bq27750
+
+
+bqProduction SBB v1.0.9
+-------------------------------
+03/29/2016
+
+Added 9E34_0_01-bq4050.bqz
+
+
+bqProduction SBB v1.0.9
+-------------------------------
+10/2/2015
+
+Add support for bq78z100 using HPA495A Mtester board over I2C.
+
+Configuration screen device configuration is now dependent on bqz Container configuration file. 
+
+
+bqProduction SBB v1.0.8
+-------------------------------
+12/15/2014
+
+Add support for devices bq34z100G1 using HPA495A and bq40320 
+
+
+bqProduction SBB v1.0.6
+-------------------------------
+5/2/2014
+
+VTI Dialog will only allow Station entries for adapters that have connected boards and marked for use.
+
+Settling time preferences range is now checked. 
+
+VTI Update is disabled during testing. 
+
+Reference Gain now longer accepts 0. 
+
+Added 100msec delay after I2C VOUT is set to 5 volts before an attempt is made to send commands to the board. 
+
+Configuration view now takes more space on screen to prevent scrolling on normal screen sizes
+
+Reduced min size requirement for configuration view to fit in samller space
+
+Created new splash image for bqProduction startup
+
+Added bqProduction help plugin
+
+Removed data flash srec creation from top menu
+
+
+bqProduction SBB v1.0.5
+-------------------------------
+3/31/2014
+
+Add support for bq28z610 version 0.11
+
+Remove menu extracting data flash from device. Use golden srecord generated from Battery Management Studio.
+
+Complete srecord or data flash only can now be programmed from a golden image. 
+
+Fix random "Command Channel not found errors" during testing. 
+
+Add support for reading bqz targetinfo.xml
+
+Add online help system. 
+
+Fix only last station writing to log file. 
+
+Allow entry and use of VTI measurements for each individual station. 
+
+Require VTI measurement entry before executing tester. 
+
+Use updated station name in entire tool if name is changed. 
+
+Add new splash screen. 
+
+Enable voltage and current supplies on each board during VTI entry. 
+
+
+bqProduction SBB v1.0.4
+-------------------------------
+Changes from v1.0.3
+
+Bugfixes :
+Login options(menu items) should remain same if login attempt fails
+
+bqProduction SBB v1.0.3
+-------------------------------
+Changes from v1.0.1
+
+Added 100 ms delay between retries for serial no, date & manufac info
+
+bqProduction SBB v1.0.1
+-------------------------------
+Changes from v1.0.0
+
+Added EV2300 name support
+Added authentication screen for VTI update
+
+
+bqProduction SBB Version 1.0.0
+-------------------------------
+
+Initial Version
+Devices Supported : bq40320
